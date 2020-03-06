@@ -4,5 +4,5 @@ main.snapshot('/tmp', (error, path) => {
 		console.log('Failed writing memory snapshot');
 		return;
 	}
-	main.log(path);
+	main.log(path, 10000);
 });
