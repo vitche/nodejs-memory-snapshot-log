@@ -33,6 +33,8 @@ module.exports = {
             }
         }
 
-        console.log('Memory snapshot', JSON.stringify(filteredDistribution));
+        if (Object.keys(filteredDistribution).length) {
+            console.log('Memory snapshot', JSON.stringify(filteredDistribution));
+        }
     }
 };
